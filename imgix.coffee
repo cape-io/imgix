@@ -12,6 +12,10 @@ generateSignUrl = (token, url) ->
   #console.log u.query
   urlParser.format u
 
+# domain - cape.imgix.net
+# token - ABCdefg0
+# sourceUrl - https://www.google.com/images/srpr/logo11w.png
+# ops - object of key value pairs.
 module.exports = (domain, token, sourceUrl, ops) ->
   u = urlParser.parse sourceUrl
   signedUrl =
